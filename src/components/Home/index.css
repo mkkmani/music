@@ -3,7 +3,7 @@
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   padding: 20px;
 }
@@ -67,16 +67,19 @@ strong {
 }
 
 @media screen and (max-width: 768px) {
-  /* .section-content-images {
+  .section-content-images {
     flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .section-images {
-    flex-direction: row;
+    flex-direction: column;
     order: 0;
   }
 
   .section-content {
     order: 1;
-  } */
+  }
 }
