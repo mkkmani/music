@@ -1,6 +1,6 @@
-import './App.css'
-import Navbar from './components/Navbar'
+import "./App.css";
+import Home from "./components/Home";
 
-const App = () => <Navbar />
+const App = () => <Home />;
 
-export default App
+export default App;
