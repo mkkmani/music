@@ -1,7 +1,7 @@
 import "./index.css";
 import { Link } from "react-router-dom";
 import { MdHome, MdOndemandVideo } from "react-icons/md";
-import { GiTeacher } from "react-icons/gi";
+import { FaGuitar } from "react-icons/fa";
 
 const Navbar = () => {
   const logoImg =
@@ -28,8 +28,8 @@ const Navbar = () => {
           </Link>
           <Link to="/instruments" className="link-item">
             <button type="button" className="nav-btn" aria-label="home">
-              <GiTeacher className="nav-link-icon" />
-              <span className="nav-link-name">Class</span>
+              <FaGuitar className="nav-link-icon" />
+              <span className="nav-link-name">Instruments</span>
             </button>
           </Link>
           <Link to="/videos" className="link-item">

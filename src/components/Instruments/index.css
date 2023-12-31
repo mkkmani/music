@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.instruments-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.h1-desc {
+  padding-left: 20px;
+}
+
+.instrument-name {
+  font-weight: bold;
+}
+
+.instrument-card {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 567px) {
+  .instrument-card {
+    padding-left: 10px;
+  }
+}
