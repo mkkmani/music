@@ -246,7 +246,7 @@ const Instruments = () => (
 
         <div className="instrument-card">
           <p>
-            <strong className="instrument-name">Ghatam</strong>
+            <strong className="instrument-name">Kanjira</strong>
           </p>
           <div className="instrument-desc-img">
             <p className="instrument-desc">
