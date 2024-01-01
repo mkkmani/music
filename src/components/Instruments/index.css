@@ -5,7 +5,7 @@
 }
 
 .instruments-container {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -20,10 +20,73 @@
 
 .instrument-card {
   padding-left: 20px;
+  margin-bottom: 30px;
+  /* box-shadow: 0px 0px 1px black;
+  margin: 10px; */
+}
+
+.instrument-name {
+  font-size: 26px;
+}
+
+.instrument-desc-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.instrument-desc {
+  width: 100%;
+  order: 1;
+  align-self: center;
+}
+
+.instrument-img-container {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.wiki-link {
+  display: block;
+}
+
+a {
+  padding-left: 3px;
+}
+
+.instrument-img-container {
+  order: 0;
+}
+
+.instrument-img {
+  width: 300px;
+  height: 300px;
 }
 
 @media screen and (max-width: 567px) {
   .instrument-card {
     padding-left: 10px;
+  }
+
+  .instrument-desc-img {
+    flex-direction: column;
+  }
+
+  .instrument-name {
+    margin: auto;
+  }
+
+  .instrument-desc {
+    width: 100%;
+    order: 1;
+  }
+
+  .instrument-img-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    order: 0;
   }
 }
