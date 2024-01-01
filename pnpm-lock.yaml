@@ -3151,7 +3151,7 @@ packages:
       '@babel/runtime': 7.23.7
       '@types/aria-query': 4.2.2
       aria-query: 4.2.2
-      chalk: 4.1.0
+      chalk: 4.1.2
       dom-accessibility-api: 0.5.16
       lz-string: 1.5.0
       pretty-format: 26.6.2
@@ -4184,7 +4184,7 @@ packages:
       '@types/babel__core': 7.20.5
       babel-plugin-istanbul: 6.1.1
       babel-preset-jest: 26.6.2_@babel+core@7.12.3
-      chalk: 4.1.0
+      chalk: 4.1.2
       graceful-fs: 4.2.11
       slash: 3.0.0
     transitivePeerDependencies:
@@ -4203,7 +4203,7 @@ packages:
       '@types/babel__core': 7.20.5
       babel-plugin-istanbul: 6.1.1
       babel-preset-jest: 26.6.2_@babel+core@7.23.7
-      chalk: 4.1.0
+      chalk: 4.1.2
       graceful-fs: 4.2.11
       slash: 3.0.0
     transitivePeerDependencies:
@@ -8389,7 +8389,7 @@ packages:
       '@jest/types': 26.6.2
       '@types/babel__traverse': 7.20.5
       '@types/node': 20.10.6
-      chalk: 4.1.0
+      chalk: 4.1.2
       co: 4.6.0
       dedent: 0.7.0
       expect: 26.6.2
@@ -8710,7 +8710,7 @@ packages:
     engines: {node: '>= 10.14.2'}
     dependencies:
       '@jest/types': 26.6.2
-      chalk: 4.1.0
+      chalk: 4.1.2
       graceful-fs: 4.2.11
       jest-pnp-resolver: 1.2.3_jest-resolve@26.6.0
       jest-util: 26.6.2
@@ -8878,7 +8878,7 @@ packages:
       jest: ^26.0.0
     dependencies:
       ansi-escapes: 4.3.2
-      chalk: 4.1.0
+      chalk: 4.1.2
       jest: 26.6.0
       jest-regex-util: 26.0.0
       jest-watcher: 26.6.2
@@ -9323,7 +9323,7 @@ packages:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}
     engines: {node: '>=10'}
     dependencies:
-      chalk: 4.1.0
+      chalk: 4.1.2
       is-unicode-supported: 0.1.0
     dev: true
 
