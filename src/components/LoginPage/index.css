@@ -1,0 +1,86 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100vw;
+}
+
+.admin-student-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-admin-btn {
+  background: none;
+  border: none;
+  outline: none;
+  margin: 14px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.active-login-btn {
+  border-bottom: 2px solid orange;
+  padding-bottom: 4px;
+}
+
+.btn-login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2px 4px;
+}
+
+.login-label {
+  margin-bottom: 3px;
+  color: #8d8f91;
+}
+
+.login-input {
+  padding: 2px 6px;
+  margin-bottom: 3px;
+}
+
+.err-msg {
+  margin-top: 4px;
+  color: red;
+  font-size: 10px;
+}
+
+.login-form-btn {
+  width: 90%;
+  border: none;
+  outline: none;
+  background-color: #2789e6;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 567px) {
+  .login-container {
+    height: 50vh;
+  }
+}

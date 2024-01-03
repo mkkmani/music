@@ -66,6 +66,25 @@
   font-size: 18px;
 }
 
+.nav-login-btn {
+  border: none;
+  outline: none;
+  background-color: #27ace6;
+  color: white;
+  padding: 4px 8px;
+  margin-left: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.log-btn-icons {
+  display: none;
+}
+
+.log-btn-text {
+  display: inline;
+}
+
 @media screen and (max-width: 567px) {
   .nav-name-sm {
     display: inline;
@@ -82,5 +101,13 @@
   .nav-link-icon {
     height: 30px;
     width: 30px;
+  }
+
+  .log-btn-icons {
+    display: inline;
+  }
+
+  .log-btn-text {
+    display: none;
   }
 }

@@ -1,9 +1,20 @@
 import "./index.css";
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, withRouter } from "react-router-dom";
 import { MdHome, MdOndemandVideo } from "react-icons/md";
+import { IoMdLogOut, IoMdLogIn } from "react-icons/io";
 import { FaGuitar } from "react-icons/fa";
+import MusicContext from "../../musicContext/musicContext";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const context = useContext(MusicContext);
+  const { logStatus } = context;
+
+  const goToLoginPage = () => {
+    const { history } = props;
+    history.push("/login");
+  };
+
   const logoImg =
     "https://res.cloudinary.com/dj1bucjya/image/upload/v1683776530/music/idol_vhtgas.jpg";
 
@@ -38,10 +49,33 @@ const Navbar = () => {
               <span className="nav-link-name">Videos</span>
             </button>
           </Link>
+
+          <button
+            type="button"
+            className="nav-login-btn"
+            aria-label="login button"
+            onClick={goToLoginPage}
+          >
+            <div className="log-btn-icons">
+              {logStatus ? (
+                <IoMdLogOut className="nav-link-icon" />
+              ) : (
+                <IoMdLogIn className="nav-link-icon" />
+              )}
+            </div>
+
+            <div className="log-btn-text">
+              {logStatus ? (
+                <span className="nav-link-name">Logout</span>
+              ) : (
+                <span className="nav-link-name">Login</span>
+              )}
+            </div>
+          </button>
         </div>
       </div>
     </nav>
   );
 };
 
-export default Navbar;
+export default withRouter(Navbar);
