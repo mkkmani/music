@@ -35,7 +35,7 @@ const LoginPage = () => {
 
     if (username !== "" && password !== "") {
       if (studentLogin) {
-        const api = "http://localhost:3005/studentLogin";
+        const api = "https://sssvmusic.onrender.com/studentLogin";
         const details = { username, password };
         const options = {
           method: "POST",
@@ -52,7 +52,7 @@ const LoginPage = () => {
           console.error("error in data fetching", error);
         }
       } else if (adminLogin) {
-        const api = "http://localhost:3005/admin-login";
+        const api = "https://sssvmusic.onrender.com/admin-login";
         const details = { username, password };
         const options = {
           method: "POST",
