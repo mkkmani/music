@@ -3153,7 +3153,7 @@ packages:
       '@babel/runtime': 7.23.7
       '@types/aria-query': 4.2.2
       aria-query: 4.2.2
-      chalk: 4.1.2
+      chalk: 4.1.0
       dom-accessibility-api: 0.5.16
       lz-string: 1.5.0
       pretty-format: 26.6.2
@@ -3765,7 +3765,7 @@ packages:
     engines: {node: '>=8.9'}
     dependencies:
       loader-utils: 2.0.4
-      regex-parser: 2.2.11
+      regex-parser: 2.3.0
     dev: true
 
   /agent-base/6.0.2:
@@ -4659,7 +4659,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001572
-      electron-to-chromium: 1.4.616
+      electron-to-chromium: 1.4.618
       escalade: 3.1.1
       node-releases: 1.1.77
     dev: true
@@ -4670,7 +4670,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001572
-      electron-to-chromium: 1.4.616
+      electron-to-chromium: 1.4.618
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13_browserslist@4.22.2
     dev: true
@@ -6020,8 +6020,8 @@ packages:
     requiresBuild: true
     dev: true
 
-  /electron-to-chromium/1.4.616:
-    resolution: {integrity: sha512-1n7zWYh8eS0L9Uy+GskE0lkBUNK83cXTVJI0pU3mGprFsbfSdAc15VTFbo+A+Bq4pwstmL30AVcEU3Fo463lNg==}
+  /electron-to-chromium/1.4.618:
+    resolution: {integrity: sha512-mTM2HieHLxs1RbD/R/ZoQLMsGI8lWIkP17G7cx32mJRBJt9wlNPkXwE3sYg/OnNb5GBkus98lXatSthoL8Y5Ag==}
     dev: true
 
   /elliptic/6.5.4:
@@ -9330,7 +9330,7 @@ packages:
     resolution: {integrity: sha512-8XPvpAA8uyhfteu8pIvQxpJZ7SYYdpUivZpGy6sFsBuKRY/7rQGavedeB8aK+Zkyq6upMFVL/9AW6vOYzfRyLg==}
     engines: {node: '>=10'}
     dependencies:
-      chalk: 4.1.2
+      chalk: 4.1.0
       is-unicode-supported: 0.1.0
     dev: true
 
@@ -11809,8 +11809,8 @@ packages:
       safe-regex: 1.1.0
     dev: true
 
-  /regex-parser/2.2.11:
-    resolution: {integrity: sha512-jbD/FT0+9MBU2XAZluI7w2OBs1RBi6p9M83nkoZayQXXU9e8Robt69FcZc7wU4eJD/YFTjn1JdCk3rbMJajz8Q==}
+  /regex-parser/2.3.0:
+    resolution: {integrity: sha512-TVILVSz2jY5D47F4mA4MppkBrafEaiUWJO/TcZHEIuI13AqoZMkK1WMA4Om1YkYbTx+9Ki1/tSUXbceyr9saRg==}
     dev: true
 
   /regexp.prototype.flags/1.5.1:

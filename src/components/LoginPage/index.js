@@ -32,10 +32,10 @@ const LoginPage = () => {
     e.preventDefault();
     setPasswordErr(false);
     setUsernameErr(false);
+
     if (username !== "" && password !== "") {
       if (studentLogin) {
-        // const api = process.env.REACT_APP_ADMIN_LOGIN_API;
-        const api = "https://sssvmusic.onrender.com/studentLogin";
+        const api = "http://localhost:3005/studentLogin";
         const details = { username, password };
         const options = {
           method: "POST",
@@ -44,11 +44,15 @@ const LoginPage = () => {
             "Content-Type": "application/json",
           },
         };
-        const response = await fetch(api, options);
-        const data = await response.json();
-        console.log("data from api l45", data);
+        try {
+          const response = await fetch(api, options);
+          const data = await response.json();
+          console.log("data from api l45", data);
+        } catch (error) {
+          console.error("error in data fetching", error);
+        }
       } else if (adminLogin) {
-        const api = "https://sssvmusic.onrender.com/admin-login";
+        const api = "http://localhost:3005/admin-login";
         const details = { username, password };
         const options = {
           method: "POST",
@@ -57,9 +61,13 @@ const LoginPage = () => {
             "Content-Type": "application/json",
           },
         };
-        const response = await fetch(api, options);
-        const data = await response.json();
-        console.log("data from api l45", data);
+        try {
+          const response = await fetch(api, options);
+          const data = await response.json();
+          console.log("data from api l45", data);
+        } catch (error) {
+          console.error("error in data fetching", error);
+        }
       }
     } else {
       if (username === "" && password === "") {
