@@ -85,7 +85,18 @@
   display: inline;
 }
 
+.menu-icon {
+  display: none;
+}
+
 @media screen and (max-width: 567px) {
+  nav {
+    position: relative;
+  }
+
+  .nav-items {
+    position: absolute;
+  }
   .nav-name-sm {
     display: inline;
   }

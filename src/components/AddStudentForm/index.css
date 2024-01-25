@@ -1,0 +1,35 @@
+.admin-page-form {
+  overflow-y: auto;
+}
+.admin-page-form {
+  padding: 20px;
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form-input {
+  width: 280px;
+}
+
+.admin-add-btn {
+  text-align: center;
+  margin-top: 8px;
+  width: 280px;
+  padding: 4px;
+  background-color: skyblue;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #fff;
+}

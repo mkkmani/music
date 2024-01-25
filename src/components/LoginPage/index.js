@@ -28,46 +28,48 @@ const LoginPage = () => {
     setPassword(e.target.value);
   };
 
+  //   const onClickLogin = async (e) => {
+  //     e.preventDefault();
+  //     console.log("on clicked");
+
+  //     const api = "https://sssvmusic.onrender.com/sample";
+  //     const options = {
+  //       method: "GET",
+  //     };
+
+  //     const res = await fetch(api, options);
+  //     console.log("l39 res", res);
+  //     const data = await res.json();
+  //     console.log("l41 data", data);
+  //   };
+
   const onClickLogin = async (e) => {
     e.preventDefault();
     setPasswordErr(false);
     setUsernameErr(false);
 
     if (username !== "" && password !== "") {
-      if (studentLogin) {
-        const api = "https://sssvmusic.onrender.com/studentLogin";
-        const details = { username, password };
-        const options = {
-          method: "POST",
-          body: JSON.stringify(details),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        };
-        try {
-          const response = await fetch(api, options);
+      const api = adminLogin
+        ? "https://sssvmusic.onrender.com/admin-login"
+        : "https://sssvmusic.onrender.com/studentLogin";
+      const details = { username, password };
+      const options = {
+        method: "POST",
+        body: JSON.stringify(details),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+      try {
+        const response = await fetch(api, options);
+        if (response.ok === true) {
           const data = await response.json();
           console.log("data from api l45", data);
-        } catch (error) {
-          console.error("error in data fetching", error);
+        } else {
+          console.log("l69 data fetch failed");
         }
-      } else if (adminLogin) {
-        const api = "https://sssvmusic.onrender.com/admin-login";
-        const details = { username, password };
-        const options = {
-          method: "POST",
-          body: JSON.stringify(details),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        };
-        try {
-          const response = await fetch(api, options);
-          const data = await response.json();
-          console.log("data from api l45", data);
-        } catch (error) {
-          console.error("error in data fetching", error);
-        }
+      } catch (error) {
+        console.error("error in data fetching", error);
       }
     } else {
       if (username === "" && password === "") {

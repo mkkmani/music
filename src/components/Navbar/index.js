@@ -30,6 +30,7 @@ const Navbar = (props) => {
             </div>
           </Link>
         </div>
+        <div className="menu-icon"></div>
         <div className="nav-items">
           <Link to="/" className="link-item">
             <button type="button" className="nav-btn" aria-label="home">

@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Instruments from "./components/Instruments";
 import Videos from "./components/Videos";
 import LoginPage from "./components/LoginPage";
+import AdminControl from "./components/AdminControl";
 
 const App = () => {
   const [logStatus, changeLogStatus] = useState(false);
@@ -27,6 +28,7 @@ const App = () => {
           <Route exact path="/instruments" component={Instruments} />
           <Route exact path="/videos" component={Videos} />
           <Route exact path="/login" component={LoginPage} />
+          <Route exact path="/admin" component={AdminControl} />
         </MusicContext.Provider>
       </Switch>
     </>
